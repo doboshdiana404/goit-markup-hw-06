@@ -3,7 +3,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: 434455;
+  color: #434455;
   background-color: #fff;
 }
 
@@ -108,7 +108,7 @@ address{
   color: #434455;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -119,7 +119,7 @@ address{
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .team {
   background-color: #f4f4fd;
