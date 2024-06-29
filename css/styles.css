@@ -14,16 +14,20 @@ ul {
 a {
   text-decoration: none;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
-.header-soc-link:hover, .header-soc-link:focus, .header-menu-link:hover, .header-menu-link:focus{
-    color: #404BBF;
+.header-soc-link:hover,
+.header-soc-link:focus,
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #404bbf;
 }
 
-.hero-btn:hover, .hero-btn:focus{
-    background-color: #404bbf;;
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
 }
 
 .logo {
@@ -36,15 +40,14 @@ button{
   color: #4d5ae5;
 }
 .header-logo {
-  
 }
 
 .logo-gray {
   color: #2e2f42;
 }
 
-address{
-    font-style: normal;
+address {
+  font-style: normal;
 }
 
 .header-menu-link {
@@ -67,7 +70,7 @@ address{
 }
 
 .hero-title {
-    text-align: center;
+  /* text-align: center; */
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
