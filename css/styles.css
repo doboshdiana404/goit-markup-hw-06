@@ -1,6 +1,4 @@
-* {
-}
-
+/* ----------GENERAL-------------- */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -42,6 +40,8 @@ h6 {
   margin-bottom: 0;
 }
 
+/* ------------------COMMON-------------- */
+
 .header-soc-link:hover,
 .header-soc-link:focus,
 .header-menu-link:hover,
@@ -58,6 +58,8 @@ h6 {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+/* ------------------HEADER------------------ */
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -117,10 +119,6 @@ address {
 .header-menu-link{
   position: relative;
 }
-
-/* .header-menu-link::after {
-  
-} */
 
 .act::after{
   content: "";
