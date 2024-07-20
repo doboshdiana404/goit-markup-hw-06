@@ -471,7 +471,6 @@ address {
 .footer-contact-item {
 }
 
-
 .footer-desc {
   margin-right: 120px;
 }
@@ -535,6 +534,8 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -548,13 +549,17 @@ address {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   width: 408px;
-  height: 584px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  padding: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 72px;
+  min-height: 584px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon-close {
@@ -563,7 +568,8 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .modal-icon-close, .modal-close-btn:focus .modal-icon-close{
+.modal-close-btn:hover .modal-icon-close,
+.modal-close-btn:focus .modal-icon-close {
   fill: #fff;
 }
 
@@ -572,18 +578,23 @@ address {
   width: 24px;
   height: 24px;
   display: flex;
-  margin-left: auto;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e7e9fc;
-  transition: background-color 250ms linear;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc; 
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  transition: background-color 250ms linear,  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0; 
 }
 
-.modal-close-btn:hover, .modal-close-btn:focus{
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
-
 
 .modal-title {
   font-weight: 500;
@@ -591,7 +602,6 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 24px;
   margin-bottom: 16px;
 }
 
@@ -604,8 +614,9 @@ address {
   padding-left: 38px;
   padding-right: 24px;
   outline: transparent;
-  transition: border 250ms linear, border-radius 250ms linear;
+  transition: border-color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal-input:focus {
@@ -619,6 +630,7 @@ address {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .modal-input-icon {
@@ -632,7 +644,6 @@ address {
   color: #8e8f99;
 }
 
-
 .modal-field {
   margin-bottom: 8px;
 }
@@ -643,10 +654,15 @@ address {
 }
 
 .modal-comment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   height: 120px;
   padding: 8px 16px;
   margin-top: 4px;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-comment::placeholder {
   font-size: 12px;
@@ -661,6 +677,7 @@ address {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  min-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   border-radius: 4px;
@@ -678,14 +695,17 @@ address {
   color: #8e8f99;
   display: flex;
   align-items: center;
-  gap: 8px;
+  line-height: 1.17;
 }
 
 .label-privacy-policy {
   text-decoration: underline;
   color: #4d5ae5;
   cursor: pointer;
+  margin-left: 4px;
 }
+
+
 
 .fike-field {
   border-radius: 2px;
@@ -695,6 +715,9 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  margin-right: 8px;
 }
 
 .modal-input-terms + .modal-label-terms span {
