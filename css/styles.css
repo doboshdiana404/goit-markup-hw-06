@@ -999,7 +999,7 @@ address {
     width: calc((100% - 72px) / 4);
   }
   .features-icon {
-    display: auto;
+    display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     margin-bottom: 8px;
